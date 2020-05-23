@@ -224,6 +224,8 @@ kotlin {
 
                 // SQL Delight
                 //implementation("com.squareup.sqldelight:sqljs-driver:${Versions.sqlDelight}")
+                implementation( files("libs/sqljs-driver-1.4.0.jar"))
+                //implementation( fileTree(dir: 'libs', include: ['*.jar']) )
                 implementation("com.squareup.sqldelight:runtime-js:${Versions.sqlDelight}")
             }
         }
