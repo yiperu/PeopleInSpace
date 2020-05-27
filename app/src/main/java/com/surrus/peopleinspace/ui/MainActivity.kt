@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            val peopleState = peopleInSpaceViewModel.peopleInSpace.collectAsState(emptyList())
+            val peopleState = peopleInSpaceViewModel.peopleInSpace.collectAsState()
             mainLayout(peopleState)
         }
     }
